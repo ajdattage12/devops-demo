@@ -7,7 +7,7 @@ const app = express();
 const students = ["Ariell"];
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "/public.index.html"));
+    res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
 app.get("/api/students", (req, res) => {

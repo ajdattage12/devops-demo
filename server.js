@@ -12,6 +12,8 @@ var rollbar = new Rollbar({
 rollbar.log('Hello world!')
 
 const app = express();
+app.use(express.json());
+app.use(cors());
 
 const students = ["Ariell"];
 
